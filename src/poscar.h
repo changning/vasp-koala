@@ -17,13 +17,13 @@ struct Poscar {
     double  dPara;          // lattice parameter
     double  ddLat[3][3];    // lattice vectors
     int     nElem;          // # of elements
-    string  ssElem[10];     // name of elements
-    int     nnElem[10];     // # of atoms of each element
+    string  ssElem[20];     // name of elements
+    int     nnElem[20];     // # of atoms of each element
     int     nAtom;          // # of all atoms
     char    cForm;          // directional or cartesian
     char    cSel;           // selective relaxation
-    double  ddAtom[999][3]; // atomic positions
-    char    ccAtom[999][3]; // selective dynamics
+    double  ddAtom[9999][3]; // atomic positions
+    char    ccAtom[9999][3]; // selective dynamics
 };
 
 bool read_poscar(char *file, Poscar *p);
