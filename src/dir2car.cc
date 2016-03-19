@@ -6,7 +6,6 @@
 
 #include "poscar.h"
 #include "matrix.h"
-#include <iterator> // to use begin(), end()
 
 using namespace std;
 
