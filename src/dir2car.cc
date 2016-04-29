@@ -30,6 +30,7 @@ int main (int argc, char *argv[]) {
     // Convert direct to cartesian for atomic positions
     p2 = p1;
     matrix_product(p1.nAtom, p1.ddAtom, p1.ddLat, p2.ddAtom);
+    p2.cForm = 'C';
     // Output
     string str(argv[1], 0, 30);
     str.append("_Cart");
