@@ -30,4 +30,5 @@ bool read_poscar(char *file, Poscar *p);
 
 bool write_poscar(char *file, Poscar *p);
 
+
 #endif // KOALA_POSCAR_H
