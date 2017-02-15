@@ -12,9 +12,9 @@ using namespace std;
 void supercell (Poscar *p1, Poscar *p2, int a, int b, int c) {
     int size = a * b * c;
     for (int i = 0; i < 3; i++) { // expand lattice
-        p2->ddLat[i][0] = p1->ddLat[i][0] * a;
-        p2->ddLat[i][1] = p1->ddLat[i][1] * b;
-        p2->ddLat[i][2] = p1->ddLat[i][2] * c;
+        p2->ddLat[0][i] = p1->ddLat[0][i] * a;
+        p2->ddLat[1][i] = p1->ddLat[1][i] * b;
+        p2->ddLat[2][i] = p1->ddLat[2][i] * c;
     }
     for (int i = 0; i < p1->nElem; i++) // expand # per element
         p2->nnElem[i] = p1->nnElem[i] * size;
